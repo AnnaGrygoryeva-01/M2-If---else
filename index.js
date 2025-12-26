@@ -56,6 +56,7 @@ if (purchaseAmount >= 500 && purchaseAmount <= 800) {
 }
 
 // 4. Реалізувати код, який приймає два числа і перевіряє, чи ділиться перше на друге націло (без залишку). Виводити в консоль булеве значення.
-
-// Кожне завдання виконати в окремій гілці. По закінченню - злити все на гілку main.
-// Код з розв'язанням завдань викласти на GitHub
+const firstNumber = Number(prompt("Enter the first number:"));
+const secondNumber = Number(prompt("Enter the second number:"));
+const isDivisible = firstNumber % secondNumber === 0;
+console.log("Is the first number divisible by the second? :>> ", isDivisible);
