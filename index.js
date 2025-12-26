@@ -44,6 +44,16 @@ if (menu === 1) {
 // 3. Користувач вводить суму покупки.
 // Обчислити та вивести остаточну суму покупки з урахуванням знижки.
 // Знижка 3% надається, якщо сума покупки більша за 500 грн., а знижка 5% - якщо сума покупки більша за 800 грн.
+const purchaseAmount = Number(prompt("Enter the purchase amount:"));
+if (purchaseAmount >= 500 && purchaseAmount <= 800) {
+  const Discount = (purchaseAmount * 3) / 100;
+  alert("Final amount with discount: " + (purchaseAmount - Discount) + " UAH");
+} else if (purchaseAmount >= 800) {
+  const Discount = (purchaseAmount * 5) / 100;
+  alert("Final amount with discount: " + (purchaseAmount - Discount) + " UAH");
+} else {
+  alert("Final amount: " + purchaseAmount + " UAH");
+}
 
 // 4. Реалізувати код, який приймає два числа і перевіряє, чи ділиться перше на друге націло (без залишку). Виводити в консоль булеве значення.
 
