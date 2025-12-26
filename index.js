@@ -7,6 +7,17 @@
 // Інакше - вивести, що сума не кратна 5
 // (одна перевірка на if, і гілка else, якщо ні)
 
+const input1 = prompt("Enter first number:");
+const input2 = prompt("Enter second number:");
+const num1 = Number(input1);
+const num2 = Number(input2);
+const sum = num1 + num2;
+if (sum % 5 === 0) {
+  alert("The sum is multiple of 5");
+} else {
+  alert("The sum is not multiple of 5");
+}
+
 // 2. Написати функцію, яка виводить промптом "меню" у вигляді
 //      "1 - Чай
 //       2 - Кава
