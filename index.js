@@ -45,11 +45,13 @@ if (menu === 1) {
 // Обчислити та вивести остаточну суму покупки з урахуванням знижки.
 // Знижка 3% надається, якщо сума покупки більша за 500 грн., а знижка 5% - якщо сума покупки більша за 800 грн.
 const purchaseAmount = Number(prompt("Enter the purchase amount:"));
+const discount3 = 3;
+const discount5 = 5;
 if (purchaseAmount >= 500 && purchaseAmount <= 800) {
-  const Discount = (purchaseAmount * 3) / 100;
+  const Discount = (purchaseAmount * discount3) / 100;
   alert("Final amount with discount: " + (purchaseAmount - Discount) + " UAH");
 } else if (purchaseAmount >= 800) {
-  const Discount = (purchaseAmount * 5) / 100;
+  const Discount = (purchaseAmount * discount5) / 100;
   alert("Final amount with discount: " + (purchaseAmount - Discount) + " UAH");
 } else {
   alert("Final amount: " + purchaseAmount + " UAH");
